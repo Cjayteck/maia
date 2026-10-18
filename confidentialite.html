@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confidentialité — MAIA</title>
+  <meta name="description" content="Politique de confidentialité de MAIA, assistant personnel de Cédric : données Gmail et Outlook utilisées, stockage, partage et suppression.">
+  <link rel="icon" href="maia-logo.png">
+  <link rel="stylesheet" href="ds/maia-tokens.css">
+  <link rel="stylesheet" href="ds/maia-components.css">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body class="maia-root">
+<main>
+  <header class="entete">
+    <span class="maia-avatar" style="--maia-avatar-size:56px"><img src="maia-logo.png" alt="Logo MAIA"></span>
+    <div>
+      <h1 class="display-lg">Politique de confidentialité</h1>
+      <p>MAIA — dernière mise à jour : 18 octobre 2026</p>
+    </div>
+  </header>
+
+  <nav aria-label="Pages">
+    <a class="maia-btn maia-btn--ghost" href="./">Accueil</a>
+    <a class="maia-btn maia-btn--ghost" href="confidentialite.html" aria-current="page">Politique de confidentialité</a>
+    <a class="maia-btn maia-btn--ghost" href="conditions.html">Conditions d'utilisation</a>
+  </nav>
+
+  <p>MAIA est une application personnelle développée et utilisée par Cédric, seul utilisateur.
+    Elle n'a pas d'autres utilisateurs, ne fait pas de publicité et ne vend aucune donnée.</p>
+
+  <h2>Données utilisées</h2>
+  <p>Avec l'autorisation de Cédric (Google : <code>gmail.modify</code> ; Microsoft : <code>Mail.ReadWrite</code>),
+    MAIA lit pour chaque nouveau message de la boîte de réception :</p>
+  <ul>
+    <li>l'expéditeur (adresse et nom affiché), l'objet et la date de réception ;</li>
+    <li>le court extrait fourni par la messagerie (environ 200 caractères) ;</li>
+    <li>quelques en-têtes techniques : authentification de l'expéditeur, lien de désabonnement d'une liste de diffusion ;</li>
+    <li>les libellés ou catégories du message, et s'il est lu.</li>
+  </ul>
+  <p><strong>Le corps des messages et les pièces jointes ne sont jamais lus.</strong></p>
+
+  <h2>Utilisation</h2>
+  <ul>
+    <li>Proposer à Cédric un rangement pour chaque message (libellé <code>MAIA/…</code>, sortie de la boîte de
+      réception, marquage comme lu ou important, signalement en indésirables), et l'appliquer seulement
+      après son accord. Chaque action peut être annulée.</li>
+    <li>Apprendre de ses décisions (expéditeur, objet, rangement choisi) pour mieux proposer ensuite.</li>
+    <li>Lui présenter un résumé : mails à traiter, mails en attente.</li>
+  </ul>
+  <p>MAIA n'envoie jamais de message, n'en supprime jamais et ne modifie pas les paramètres de la boîte.</p>
+
+  <h2>Où sont traitées et conservées les données</h2>
+  <ul>
+    <li>Tout le traitement se fait <strong>chez Cédric</strong> : sur son serveur personnel (un NAS Synology,
+      accessible seulement par son réseau privé) et sur son PC.</li>
+    <li>Les propositions, les décisions et les jetons d'accès sont conservés sur ce NAS ; les jetons
+      d'accès sont dans des fichiers lisibles par le seul compte de MAIA.</li>
+    <li>Le tri par intelligence artificielle se fait avec un modèle installé sur le PC de Cédric : les
+      données des messages ne quittent pas sa maison.</li>
+  </ul>
+
+  <h2>Partage</h2>
+  <p>Aucune donnée issue de Gmail ou d'Outlook n'est partagée, vendue ni transmise à un tiers.
+    Pour la conversation vocale, MAIA utilise le service Claude d'Anthropic : il reçoit les demandes
+    orales de Cédric (transcrites sur son PC) et seulement des <strong>nombres et des catégories</strong>
+    sur ses mails (par exemple « 3 mails à traiter ») — jamais un expéditeur, un objet ni un contenu
+    de message. Personne d'autre que Cédric n'a accès aux données.</p>
+
+  <h2>Durée de conservation et suppression</h2>
+  <ul>
+    <li>Les données restent sur le NAS de Cédric tant qu'il utilise MAIA ; il peut les effacer à tout
+      moment (réinitialisation de MAIA).</li>
+    <li>Déconnecter une boîte depuis MAIA supprime ses jetons d'accès. L'autorisation Google peut aussi
+      être retirée à tout moment sur <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Aucun enregistrement audio n'est conservé.</li>
+  </ul>
+
+  <h2>Règles d'utilisation des données Google</h2>
+  <div class="maia-card">
+    <p>L'utilisation et le transfert par MAIA des informations reçues des API Google respectent les
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">règles relatives aux données
+      utilisateur des services d'API Google</a> (Google API Services User Data Policy), y compris les
+      exigences d'utilisation limitée (Limited Use).</p>
+    <p class="discret">MAIA's use and transfer of information received from Google APIs adheres to the
+      Google API Services User Data Policy, including the Limited Use requirements.</p>
+  </div>
+
+  <h2>Contact</h2>
+  <p>Pour toute question : <a href="mailto:c.relave69@gmail.com">c.relave69@gmail.com</a>.</p>
+
+  <footer>
+    <p>MAIA · usage personnel · <a href="./">Accueil</a> · <a href="conditions.html">Conditions d'utilisation</a></p>
+  </footer>
+</main>
+</body>
+</html>

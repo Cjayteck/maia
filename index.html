@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MAIA — assistant personnel de Cédric</title>
+  <meta name="description" content="MAIA est l'assistant personnel de Cédric : tri de ses mails, suivi de ses appareils, briefing quotidien. Usage strictement personnel.">
+  <link rel="icon" href="maia-logo.png">
+  <link rel="stylesheet" href="ds/maia-tokens.css">
+  <link rel="stylesheet" href="ds/maia-components.css">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body class="maia-root">
+<main>
+  <header class="entete">
+    <span class="maia-avatar" style="--maia-avatar-size:72px"><img src="maia-logo.png" alt="Logo MAIA"></span>
+    <div>
+      <h1 class="display-lg">MAIA</h1>
+      <p>Mon Assistant Intelligent Autonome — un outil personnel de Cédric</p>
+    </div>
+  </header>
+
+  <nav aria-label="Pages">
+    <a class="maia-btn maia-btn--ghost" href="./" aria-current="page">Accueil</a>
+    <a class="maia-btn maia-btn--ghost" href="confidentialite.html">Politique de confidentialité</a>
+    <a class="maia-btn maia-btn--ghost" href="conditions.html">Conditions d'utilisation</a>
+  </nav>
+
+  <p>MAIA est une application <strong>personnelle</strong> : elle n'a qu'un seul utilisateur, Cédric, et
+    elle n'est ni commercialisée ni ouverte au public. Elle fonctionne chez lui, sur son propre serveur
+    (un NAS Synology) et sur son PC.</p>
+
+  <h2>Ce que fait MAIA</h2>
+  <div class="maia-card">
+    <h3>Trier les mails de Cédric</h3>
+    <p>MAIA lit les informations d'en-tête des nouveaux mails de ses boîtes Gmail et Outlook (expéditeur,
+      objet, court extrait, catégories) et propose de les ranger : libellé <code>MAIA/…</code>, sortie de la
+      boîte de réception, marquage comme lu ou important, signalement d'un hameçonnage probable.
+      <strong>Rien n'est fait sans l'accord de Cédric</strong>, et chaque action peut être annulée.
+      MAIA n'envoie jamais de mail et n'en supprime jamais.</p>
+  </div>
+  <div class="maia-card">
+    <h3>Suivre ses appareils</h3>
+    <p>MAIA surveille l'état du NAS, de ses conteneurs et du PC (espace disque, santé des disques, mises
+      à jour) et signale les alertes par ordre de gravité.</p>
+  </div>
+  <div class="maia-card">
+    <h3>Faire le point chaque jour</h3>
+    <p>Au démarrage du PC, MAIA affiche et lit un briefing : mails à traiter, mails en attente, alertes,
+      décisions à prendre. Cédric peut lui répondre à la voix.</p>
+  </div>
+
+  <h2>Pourquoi l'accès à Gmail</h2>
+  <p>MAIA demande l'autorisation Gmail <code>gmail.modify</code> pour lire les en-têtes des messages et
+    leur appliquer des libellés ou les déplacer, à la demande de Cédric. Le détail des données utilisées
+    et de leur protection est dans la <a href="confidentialite.html">politique de confidentialité</a>.</p>
+
+  <footer>
+    <p>MAIA · usage personnel · contact : <a href="mailto:c.relave69@gmail.com">c.relave69@gmail.com</a> ·
+      <a href="confidentialite.html">Politique de confidentialité</a> ·
+      <a href="conditions.html">Conditions d'utilisation</a></p>
+  </footer>
+</main>
+</body>
+</html>
